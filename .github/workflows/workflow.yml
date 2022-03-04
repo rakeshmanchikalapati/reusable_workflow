@@ -7,6 +7,6 @@ on:
 
 jobs:
  my-workflow-job-4:
-      uses: zeallearn/reusable_workflow/.github/workflows/workflow-template.yml@main
+      uses: zeallearn/reusable_workflow/.github/workflows/workflow-template.yml@feature
       with:
         ENVIRONMENT: myenvironment
