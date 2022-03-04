@@ -3,7 +3,7 @@ name: Deploy Workflow test
 on:
   push:
       branches:
-          - feature
+          - main
 
 jobs:
  my-workflow-job-4:
