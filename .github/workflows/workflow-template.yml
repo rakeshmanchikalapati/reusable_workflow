@@ -1,4 +1,4 @@
-name: Workflow Template
+name: Workflow Template with Fix
 
 on:
   workflow_call:
@@ -6,6 +6,9 @@ on:
       ENVIRONMENT:
         required: true
         type: string
+    secrets:
+      MY_SECRET: 
+        required: true
             
 jobs:
     my-job:
