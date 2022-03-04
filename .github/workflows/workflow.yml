@@ -4,11 +4,9 @@ on:
   push:
       branches:
           - master
-  
-  workflow_dispatch:
 
 jobs:
  my-workflow-job-4:
-      uses: zeallearn/reusable_workflow/.github/workflows/workflow-template-fix.yml@master
+      uses: zeallearn/reusable_workflow/.github/workflows/workflow-template.yml@master
       with:
         ENVIRONMENT: myenvironment
