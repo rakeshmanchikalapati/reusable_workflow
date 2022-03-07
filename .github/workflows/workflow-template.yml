@@ -2,6 +2,10 @@ name: Workflow Template with Fix
 
 on:
   workflow_call:
+    inputs:
+      ENVIRONMENT:
+        required: true
+        type: string
     secrets:
       MY_SECRET: 
         required: false
@@ -10,6 +14,7 @@ jobs:
     my-job:
         name: my-job
         runs-on: ubuntu-latest
+        environment: ${{ inputs.ENVIRONMENT }}
 
         env:
             MY_SECRET: ${{ secrets.MY_SECRET }}
